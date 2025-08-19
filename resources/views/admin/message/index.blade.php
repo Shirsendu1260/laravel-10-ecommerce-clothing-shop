@@ -69,7 +69,7 @@
                                                     <span class="badge bg-danger">No</span>
                                                 @endif
                                             </td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($contact_message->created_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($contact_message->created_at)) }}</td>
                                             <td class="text-center p-2">
                                                 <div class="list-icon-function d-flex justify-content-center">
                                                     <a href="{{ route('admin_contact_messages_details_page', $contact_message->id) }}">
