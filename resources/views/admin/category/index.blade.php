@@ -77,7 +77,7 @@
                                                     {{-- 1 --}}
                                                 </a>
                                             </td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($category->updated_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($category->updated_at)) }}</td>
                                             <td class="text-center p-2">
                                                 @if($category->status == 1)
                                                     <i class="bi bi-check-circle-fill text-success me-2"></i>Active
