@@ -73,7 +73,7 @@
                                             <td class="text-center p-2">{{ Str::limit($slide->title, 25, '...') }}</td>
                                             <td class="text-center p-2">{{ Str::limit($slide->subtitle, 25, '...') }}</td>
                                             <td class="text-center p-2">{{ $slide->link }}</td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($slide->updated_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($slide->updated_at)) }}</td>
                                             <td class="text-center p-2">
                                                 @if($slide->status == 1)
                                                     <i class="bi bi-check-circle-fill text-success me-2"></i>Active
