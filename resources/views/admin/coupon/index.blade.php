@@ -73,7 +73,7 @@
                                             </td>
                                             <td class="text-center p-2">{{ date('d M, Y', strtotime($coupon->starts_at)) }}</td>
                                             <td class="text-center p-2">{{ date('d M, Y', strtotime($coupon->expires_at)) }}</td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($coupon->updated_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($coupon->updated_at)) }}</td>
                                             <td class="text-center p-2">
                                                 @if($coupon->status == 1)
                                                     <i class="bi bi-check-circle-fill text-success me-2"></i>Active
