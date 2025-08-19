@@ -63,7 +63,7 @@
                                                 </div>
                                             </td>
                                             <td class="text-center p-2">{{ $delivery_timeslot->delivery_method_name }}</td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($delivery_timeslot->updated_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($delivery_timeslot->updated_at)) }}</td>
                                             <td class="text-center p-2">
                                                 @if($delivery_timeslot->status == 1)
                                                     <i class="bi bi-check-circle-fill text-success me-2"></i>Active
