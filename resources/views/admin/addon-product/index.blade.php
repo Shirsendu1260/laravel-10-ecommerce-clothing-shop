@@ -86,7 +86,7 @@
                                             @endif
                                         </td>
                                         <td class="text-center p-2">{{ $addon_product->qty }}</td>
-                                        <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($addon_product->updated_at)) }}</td>
+                                        <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($addon_product->updated_at)) }}</td>
                                         <td class="text-center p-2">
                                             @if($addon_product->status == 1)
                                                 <i class="bi bi-check-circle-fill text-success me-2"></i>Active
