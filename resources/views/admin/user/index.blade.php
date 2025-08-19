@@ -85,7 +85,7 @@
                                                     <i class="bi bi-x-circle-fill text-danger me-2"></i>Inactive
                                                 @endif
                                             </td>
-                                            <td class="text-center p-2">{{ date('d M, Y, h:m a', strtotime($user->created_at)) }}</td>
+                                            <td class="text-center p-2">{{ date('d M, Y, g:i A', strtotime($user->created_at)) }}</td>
                                             <td class="text-center p-2">
                                                 <div class="list-icon-function d-flex justify-content-center">
                                                     @if($user->status == '0')
