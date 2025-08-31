@@ -3,6 +3,8 @@
 ## About the Project
 A comprehensive Laravel 10 full-stack e-commerce clothing shop, featuring product management, a shopping cart, and a full checkout system. The project includes an integrated admin panel for managing products, orders, users, and other backend functionalities. It supports responsive design, file uploads, advanced filtering, and infinite scrolling using AJAX.
 
+The website is live at this URL: https://ecommerce-clothing-shop.infinityfreeapp.com
+
 ## Technologies Used
 - Laravel 10
 - PHP 8.2.12
