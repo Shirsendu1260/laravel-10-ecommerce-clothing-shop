@@ -54,4 +54,4 @@ Follow these steps to set up and run the project locally:
    ```
 8. Open your browser and visit `http://127.0.0.1:8000` to access the application.
 
-Template Credit: Surfside Media (YouTube)
+Frontend Template Credit: Surfside Media (YouTube)
