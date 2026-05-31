@@ -1,3 +1,7 @@
+/* ============================================================
+   TERRA THEME — custom.css
+   ============================================================ */
+
 .footer-middle {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
@@ -16,12 +20,31 @@
     gap: 1.625rem;
 }
 
-.form-floating>.form-control,
-.form-floating>.form-select {
+.form-floating > .form-control,
+.form-floating > .form-select {
     /* height: 48px; */
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    border-color: #DDD6CE;
+    background-color: #FDFAF6;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-select:focus {
+    border-color: #0F766E;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.form-floating > label {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    color: #78716C;
 }
 
 p {
     text-align: justify;
     text-justify: inter-word;
+    font-family: "Poppins", sans-serif;
+    color: #231917;
+    line-height: 1.8;
 }

@@ -8,9 +8,9 @@
     <meta name="author" content="Shirsendu Mali" />
     <meta name="csrf_token" content="{{ csrf_token() }}" />
     <link rel="shortcut icon" href="{{ asset('assets/user/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@400;600&family=Bitter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/user/css/plugins/swiper.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('assets/admin/css/sweetalert.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('assets/user/css/style.css') }}" type="text/css" />
@@ -442,6 +442,16 @@
                         <li class="navigation__item">
                             <a href="{{ route('contact_us') }}" class="navigation__link">Contact</a>
                         </li>
+                        @if(!Auth::check())
+                            <li class="navigation__item">
+                                <a href="{{ route('login') }}" class="navigation__link">Login</a>
+                            </li>
+                        @endif
+                        @if(Auth::check())
+                            <li class="navigation__item">
+                                <a href="{{ route('user_dashboard') }}" class="navigation__link">Profile</a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -518,6 +528,11 @@
                         <li class="navigation__item">
                             <a href="{{ route('contact_us') }}" class="navigation__link">Contact</a>
                         </li>
+                        @if(!Auth::check())
+                            <li class="navigation__item">
+                                <a href="{{ route('login') }}" class="navigation__link">Login</a>
+                            </li>
+                        @endif
                     </ul>
                 </nav>
 

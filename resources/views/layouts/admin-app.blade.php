@@ -291,6 +291,16 @@ use Illuminate\Support\Str;
                                         <div class="text">Users</div>
                                     </a>
                                 </li>
+                            
+                            <li class="menu-item">
+                                    <a href="javascript:void(0)" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="">
+                                        <div class="icon"><i></i></div>
+                                        <div class="text text-danger">Logout</div>
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        @csrf
+                                                    </form>
+                                </li>
 
                                 {{-- <li class="menu-item">
                                     <a href="settings.html" class="">

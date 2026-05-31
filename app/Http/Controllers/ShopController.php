@@ -57,8 +57,7 @@ class ShopController extends Controller
                 'products.created_at',
                 'products.updated_at',
             )
-            ->where('products.status', 1)
-            ->orderBy('avg_rating', 'DESC');
+            ->where('products.status', 1);
 
         // Filter products based on category
         if(!empty($category_slug)) {
